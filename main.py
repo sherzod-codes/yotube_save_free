@@ -86,9 +86,9 @@ async def get_video(message: types.Message, state: FSMContext):
         await message.answer('Yuklab olishda xatolik yuz berdi. Iltimos, URL-ni tekshiring.')
 
 
-@dp.message_handler(commands=['card'])
+@dp.message_handler(commands=['vidio'])
 async def send_card(message: types.Message):
-    await message.answer("Sizning vizit kartangiz tayyor. Yuklab olish uchun yuqoridagi URLni kiriting.")
+    await message.answer("Sizning vidioni tayyor. Yuklab olish uchun -> /vidio <- ni bosing")
 
 
 @dp.message_handler(commands=['cancel'], state=UserState.save)
